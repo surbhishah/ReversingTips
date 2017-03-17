@@ -1,0 +1,1 @@
+This repo contains my notes from Practical Malware Analysis book by Michael Sikorski and Andrew Honig. This is an amazing book! 
