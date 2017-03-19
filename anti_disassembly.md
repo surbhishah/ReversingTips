@@ -13,7 +13,7 @@ There are two techniques to perform disassembly:
 Example:
 If the 16 bytes of data that compose a switch table end with 0xE8, disassembler will think that the next 4 bytes are part of call instruction. Call instruction starts with E8.  
 
-**- Flow-oriented disassembly**
+**-Flow-oriented disassembly**
 
 - Conditional branches give the disassembler a choice of two places to disassemble: true or false branch. In handwritten assembly code and anti-assembly code, two branches can often produce different disassembly for the same block of code.
 
@@ -46,4 +46,10 @@ When retn is used for purposes other than returning from a function, disassemble
 *To adjust function boundaries, use ALT-P*
 
 ####Misused Structured Exception Handlers
-jjjkk
+**Did not understand this completely. Will try again** TODO
+
+####Thwarting Stack frame analysis
+
+- Disassemblers can analyze instructions in a function to deduces the construction of its stack frame, which allows them to display local variables and arguments. 
+
+- Misleading operations on esp register can confuse disassembler. 
